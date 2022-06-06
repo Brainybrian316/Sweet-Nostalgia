@@ -5,7 +5,7 @@ const homeRoutes = require('./home-routes.js');
 const dashboardRoutes = require('./dashboard-routes');
 
 // new routes
-const subscriptionRoutes = require('./subscription-routes');
+
 const creditCardRoutes = require('./creditCard-routes');
 const thankYou = require('./thankYou-routes');
 
