@@ -6,7 +6,7 @@ const dashboardRoutes = require('./dashboard-routes');
 
 // new routes
 const creditCardRoutes = require('./creditCard-routes');
-const thankYou = require('./thankYou-routes');
+// const thankYou = require('./thankYou-routes');
 
 
 
@@ -20,7 +20,7 @@ router.use('/dashboard', dashboardRoutes);
 
 // new routes
 router.use('/creditcard', creditCardRoutes);
-router.use('/thankyou',thankYou);
+// router.use('/thankyou',thankYou);
 
 
 router.use((req, res) => {

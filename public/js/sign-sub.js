@@ -16,7 +16,7 @@ async function signupSubFormHandler(event) {
         })
 
         if (response.ok) {
-            document.location.replace('/creditcard');
+            document.location.replace('/thankYou');
         } else {
             alert('Faliure to subscribe :(');
         }
