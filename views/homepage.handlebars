@@ -10,11 +10,17 @@
                 <div class="col-12 text-center">
                     <p class="text-center">A totally customized box of themed candies - every month</p>
                 </div>
+                {{#if loggedIn}}
                 <div clas="col-12 pb-3">
-                    <a class="btn btn-warning " href="/signup" role="button">Get Nostalgia Today</a>
+                    <a class="btn btn-warning " href="/dashboard" role="button">Manage Account</a>
                 </div>
+                {{else}}
+                <div clas="col-12 pb-3">
+                    <a class="btn btn-info" href="/signup" role="button"><span class="fancy-text">Get Nostalgia Today</span></a>
+                </div>
+                {{/if}}
                 <div class="col-12">
-                    <div class="text-center pt-3">
+                    <div class="text-center pt-3 pb-3">
                         <img src="/images/homepage-candy-box-image.png" alt="Hero Image 1" class="hero-image">
                     </div>
                 </div>
