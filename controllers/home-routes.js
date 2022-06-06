@@ -15,6 +15,10 @@ router.get('/signup', (req, res) => {   // we are checking if the user is logged
     res.render('signup');
   });
 
+  router.get('/creditcard',(req,res)=>{
+    res.render('creditcard')
+});
+
 // GET login page
 router.get('/login', (req, res) => {  // we are checking if the user is logged in
     if (req.session.loggedIn) {

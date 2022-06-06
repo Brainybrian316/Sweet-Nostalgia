@@ -216,6 +216,8 @@ h6 {
         font-family:arial black;
         background-image: 
           linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+          background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;  
         animation: move 1000s linear infinite;
