@@ -115,10 +115,14 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 
 <p> Give a ⭐️ if this project helped you! </p>
-<p> Buy me a coffee by becoming a patreon ☕️ </p>
+<p> Buy me a coffee or support me by becoming a patreon ☕️ </p>
 
+<a href="https://www.buymeacoffee.com/brainybrian316" target="_blank">
+ <img alt="License: ISC" src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" />
+</a>  
+  <br>
 <a href="https://www.patreon.com/brainybrian316">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+ <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
 
 ***
