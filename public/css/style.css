@@ -3,6 +3,7 @@
 root {
     padding: 0;
     margin: 0;
+    --gradient-color: linear-gradient( 115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
 }
 
 body {
@@ -210,3 +211,19 @@ h6 {
   #sign-ex-edit {
     background-color: rgba(32, 12, 255, 0.28);
   }
+
+ .fancy-text {
+        font-family:arial black;
+        background-image: 
+          linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+          background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;  
+        animation: move 1000s linear infinite;
+      }
+      @keyframes move {
+        to {
+          background-position: 4500vh;
+        }
+        }

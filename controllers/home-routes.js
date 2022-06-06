@@ -15,6 +15,10 @@ router.get('/signup', (req, res) => {   // we are checking if the user is logged
     res.render('signup');
   });
 
+  router.get('/creditcard',(req,res)=>{
+    res.render('creditcard')
+});
+
 // GET login page
 router.get('/login', (req, res) => {  // we are checking if the user is logged in
     if (req.session.loggedIn) {
@@ -33,10 +37,46 @@ router.get('/', (req, res) => { // anyone can access this page
 });
 
 router.get('/themes', (req,res)=>{
-
   res.render('themes',{loggedIn : req.session.loggedIn})
 })
 
+router.get('/thankyou', withAuth, (req, res) => {
+  // access the candyBox model to find a subscription
+  Users.findOne({
+          // find the subscription for the user by id
+          where: {
+              id: req.session.users
+          },
+          attributes: ['id', 'first_name', 'last_name', 'email', 'address', 'city', 'state', 'zipCode'],
+          include: [
+              {
+                  model: CandyBox,
+                  attributes: ['id', 'decade', 'price', 'stock',],
+                  include: [
+                      {
+                          model: Candies,
+                          attributes: ['id', 'candy_name'],
+              }
+          ]
+      }
+          ], 
+  })
+  // send the response back to the client
+  .then(dbSubscriptionData => {
+      if (!dbSubscriptionData) {
+          res.status(404).json({ message: 'No subscription found with this id'});
+          return;
+      }
+      // const users = dbSubscriptionData.map(user => user.get({ plain: true}));
+      const users = dbSubscriptionData.get({ plain: true});
+      res.render('thankYou', { users, loggedIn: true })
+  })
+  // catch any errors
+  .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+  });
+})
 
 router.get('/subscription', withAuth, (req, res) => {
   // access the candyBox model to find a subscription

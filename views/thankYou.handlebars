@@ -1,0 +1,34 @@
+
+
+<div class="container pb-3">
+  <div class="row">
+<div class="card text-center signup-hero  pb-3" >
+  <div class="card-header fs-1">
+    THANK YOU FOR YOUR PURCHASE!
+  </div>
+  <div class="card-body">
+    <div class="card-title fs-3"><span class="fancy-text">{{users.first_name}} {{users.last_name}}'s</span> special treat is on the way...
+    </div>
+    
+    <div id="IframeWrapper" style="position: relative;">
+    <div id="iframeBlocker" style="position: absolute; top: 0; left: 0; width:95%; height:95%;z-index:2"></div>
+         <iframe src="https://giphy.com/embed/wZtxwyGdLV838qwYNt" width="480" height="270" frameBorder="0"></iframe><p>
+    </div>
+
+    <p class="fs-4">  Your {{users.candyboxes.0.decade}}  Candy Box will include
+       3 {{users.candyboxes.0.candies.0.candy_name}},
+       3 {{users.candyboxes.0.candies.1.candy_name}},
+       2 {{users.candyboxes.0.candies.2.candy_name}},
+       3 {{users.candyboxes.0.candies.3.candy_name}}, and
+       2 {{users.candyboxes.0.candies.4.candy_name}} YUMMY🍬🍫🍭!
+    </p>
+
+    <a href="/dashboard" class="btn btn-danger">Account Dashboard</a>
+    <a href="/" class="btn btn-danger">Home</a>
+  </div>
+  </div>
+
+  </div>
+</div>
+
+
