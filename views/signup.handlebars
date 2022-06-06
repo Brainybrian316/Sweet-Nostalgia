@@ -7,7 +7,7 @@
 
                     <div class="col-md-12 pt-3">
                         <div class="input-group">
-                            <span class="input-group-text" for="first-input-signup last-input-signup">First and last
+                            <span class="input-group-text" id="sign-ex" for="first-input-signup last-input-signup">First and last
                                 name</span>
                             <input type="name" class="form-control" id="first-input-signup" placeholder="Toby" required>
                             <input type="name" class="form-control" id="last-input-signup" placeholder="Flenderson"
@@ -43,12 +43,7 @@
 
                     <div class="col-md-4">
                         <label for="state-input-signup" class="form-label">State:</label>
-                        <select id="state-input-signup" class="form-select" required>
-                            <option hidden></option>
-                            <option>Florida</option>
-                            <option>California</option>
-                            <option>New York</option>
-                        </select>
+                        <input id="state-input-signup" class="form-control" id="state-input-signup" placeholder="PA" required>
                         <div class="valid-feedback">
                             State looks good!
                         </div>
@@ -73,7 +68,7 @@
                         <div class="input-group">
                             <input type="email" class="form-control" id="email-input-signup"
                                 placeholder="ScrantonStranger@gmail.com" required>
-                            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                            <span class="input-group-text" id="sign-ex">@gmail.com</span>
                             <div class="valid-feedback">
                                 Email looks good!
                             </div>
@@ -122,4 +117,4 @@
 
 
 <script src="/js/signup.js"></script>
-<script src="/js/signup-validate.js"></script>
+<script src="/js/validation.js"></script>

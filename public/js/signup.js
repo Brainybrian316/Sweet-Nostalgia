@@ -31,7 +31,6 @@ async function signupFormHandles(event) {
                 'Content-Type': 'application/json'
             }
         });
-
         // check the response status
         if (response.ok) {
             //  if the response is ok we send the response to the client and we redirect to the dashboard page

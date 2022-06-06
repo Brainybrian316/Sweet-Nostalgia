@@ -1,7 +1,7 @@
 //  a synchrnous function to logout
 async function logout() {
     // this variable will respond to the response from the server and will be used to send the response to the client.
-    const response = await fetch('/api/session/logout', { // fetch the users with the email and password provided to logoout
+    const response = await fetch('/api/users/logout', { // fetch the users with the email and password provided to logoout
         // the method is POST
         method: 'post',
         // the headers are the headers we want to send to the server

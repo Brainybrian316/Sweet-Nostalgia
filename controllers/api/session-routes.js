@@ -30,12 +30,6 @@ const { Users} = require("../../models");
             // the purpose of session.loggedIn is to check if the user is logged in or not
             req.session.loggedIn = true,
             // send the response with the user data
-            console.log(req.session); 
-            console.log(req.session.loggedIn);
-            console.log(req.session.user);
-            console.log(dbUserData.id)
-            console.log(req.session.email)
-            console.log(dbUserData)
     res.json({ user: dbUserData, message: 'You are now logged in!' });
     });
 });

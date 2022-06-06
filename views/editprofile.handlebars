@@ -1,0 +1,99 @@
+<div class="dashboard-hero">
+    <h1 class="mb-5">Edit Account Information</h1>
+    <div class="row">
+        <div class="edit-profile-form">
+                <form class="row g-3 requires-validation" novalidate>
+
+
+                             <div class="col-md-6">
+                        <label for="edit-email" class="form-label">Email:</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="edit-email" value="{{users.email}}" required>
+                            <div class="valid-feedback text-info">
+                                Email looks good!
+                            </div>
+                            <div class="invalid-feedback text-warning">
+                                Email is required!
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-md-12">
+                        <label for="edit-first-name" class="form-label">First name:</label>
+                        <input type="address" class="form-control" id="edit-first-name" value="{{users.first_name}}" required>
+                        <div class="valid-feedback text-info">
+                            Address looks good!
+                        </div>
+                        <div class="invalid-feedback text-warning">
+                            Addres is required!
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="edit-last-name" class="form-label">Last Name:</label>
+                        <input type="address" class="form-control" id="edit-last-name" value="{{users.last_name}}" required>
+                        <div class="valid-feedback text-info">
+                            Address looks good!
+                        </div>
+                        <div class="invalid-feedback text-warning">
+                            Addres is required!
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="edit-address" class="form-label">Address:</label>
+                        <input type="address" class="form-control" id="edit-address" value="{{users.address}}" required>
+                        <div class="valid-feedback text-info">
+                            Address looks good!
+                        </div>
+                        <div class="invalid-feedback text-warning">
+                            Addres is required!
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="edit-city" class="form-label">City:</label>
+                        <input type="city" class="form-control" id="edit-city" value="{{users.city}}" required>
+                        <div class="valid-feedback text-info">
+                            City looks good!
+                        </div>
+                        <div class="invalid-feedback text-warning">
+                            City is required!
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="edit-state" class="form-label">State:</label>
+                        <input type="state" id="edit-state" class="form-control" value="{{users.state}}" required>
+                           <div id="state-helper" class="form-text ">
+                            Input your state's abbreviation (ex. CA)
+                        </div>
+                        <div class="valid-feedback text-info">
+                            State looks good!
+                        </div>
+                        <div class="invalid-feedback text-warning">
+                            State is required!
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label for="edit-zipCode" class="form-label">ZipCode:</label>
+                        <input type="zipcode" class="form-control" id="edit-zipCode" value="{{users.zipCode}}" required>
+                        <div class="valid-feedback text-info">
+                            ZipCode looks good!
+                        </div>
+                        <div class="invalid-feedback text-warning">
+                            ZipCode is required!
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-info" type="submit">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/edit-profile.js"></script>
+    <script src="/js/validation.js"></script>

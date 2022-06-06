@@ -1,9 +1,34 @@
-
-
-<div class="container">
+<div class="dashboard-hero">
+  <h1 class="mb-3">Account Dashboard For {{users.first_name}} {{users.last_name}} </h1>
   <div class="row">
-    <div class="login-hero pb-3">
-      <h1>Welcome Back User manager your account here: </h1>
+    <div class="col-md-6 pb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Manage Your Account</h5>
+          <p class="card-text">
+            <a href="dashboard/edit/{{users.id}}"><button class="btn btn-primary">Edit Profile</button></a>
+            <a href="dashboard/password/{{users.id}}"><button class="btn btn-primary">Change Password</button></a>
+          </h5>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+    
+
+{{!--  subscription ship date--}}
+<div class="dashboard-hero">
+  <h1 class="mb-3">Subscription</h1>
+  <div class="row">
+    <div class="col-md-6 pb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{users.first_name}} {{users.last_name}} current subscription is <span class="fw-bold text-decoration-underline text-info">{{users.candyboxes.0.decade}} Candy Box</span></h5>
+          <p class="card-text">
+            <a href="/dashboard/sub/{{users.id}}" class="btn btn-primary">Manage Subscriptions</a>
+          </h5>
+        </div>
       </div>
     </div>
   </div>
+  

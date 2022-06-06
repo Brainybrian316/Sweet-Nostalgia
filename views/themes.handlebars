@@ -1,41 +1,116 @@
- <style>
-   h1,h2{
-     text-align: center;
-     color:white;
-   }
-  img{
-    width: 500px;
-    height: 350px;
-  }
-  p{
-    padding-top: 55px;
-    text-align: center;
-  }
+<div class="theme-title-heading text-info text-center mb-5">
+  <h1>Take Me Back To The Good Days</h1>
+  <h2>OH SWEET NOSTALGIA!</h2>
+</div>
+
+<div class="theme-hero-1">
+  <div class="row">
+
+    <div class="col-md-6 col-sm-12">
+      <img id="theme-img" class="rounded img-fluid" alt="..."
+        src="https://post.healthline.com/wp-content/uploads/2020/09/4609-cat-732x549-thumbnail.jpg">
+    </div>
+
+    <div class="col-md-6 col-sm-12 text-center pt-lg-3 pb-lg-3">
+      <div class="d-flex flex-column justify-content-evenly align-items-center mt-3">
+        <h3 id="text-responsive">Starting with the 70's box!</h3>
+        <p id="text-responsive">This box is filled with the best candies from the 70's</p>
+        <div class="grid" id="text-responsive">
+          <ul class="list-group list-group-horizontal bg-transparent align-items-center">
+            <div class="list-group-item list-group-item-primary">Andes Mints</li>
+              <div class="list-group-item flex-fill list-group-item-success">Appleheads</li>
+                <div class="list-group-item flex-fill list-group-item-danger">Astronaut Ice Cream Sandwich</li>
+                  <div class="list-group-item flex-fill list-group-item-warning">Blow Pops</li>
+                    <li class="list-group-item flex-fill list-group-item-info">BuckEyes</li>
+          </ul>
+        </div>
+        {{#if loggedIn}}
+        <div class="col-12 pt-3 pb-3">
+          <a class="btn btn-primary btn-lg btn-block" href="/dashboard" role="button" id="text-responsive">Get Sweet
+            70s Now!</a>
+        </div>
+        {{else}}
+        <div class="col-12 pt-3 pb-3">
+          <a class="btn btn-primary btn-lg btn-block" href="/signup" role="button" id="text-responsive">Get Sweet
+            70s Now!</a>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="theme-hero-2">
+  <div class="row">
+
+    <div class="col-md-6 col-sm-12">
+      <img id="theme-img" class="rounded img-fluid" alt="..."
+        src="https://post.healthline.com/wp-content/uploads/2020/09/4609-cat-732x549-thumbnail.jpg">
+    </div>
+
+    <div class="col-md-6 col-sm-12 text-center pt-lg-3 pb-lg-3">
+      <div class="d-flex flex-column justify-content-evenly align-items-center mt-3">
+        <h3 id="text-responsive">Sweet 80's box!</h3>
+        <p id="text-responsive">This box is filled with the best candies from the 80's</p>
+        <div class="grid" id="text-responsive">
+          <ul class="list-group list-group-horizontal bg-transparent align-items-center">
+            <div class="list-group-item list-group-item-primary">BarkNone</li>
+              <div class="list-group-item flex-fill list-group-item-success">Nerds</li>
+                <div class="list-group-item flex-fill list-group-item-danger">Spree</li>
+                  <div class="list-group-item flex-fill list-group-item-warning">Skor</li>
+                    <li class="list-group-item flex-fill list-group-item-info">Cow Tales</li>
+          </ul>
+        {{#if loggedIn}}
+        <div class="col-12 pt-3 pb-3">
+          <a class="btn btn-primary btn-lg btn-block" href="/dashboard" role="button" id="text-responsive">Get Sweet
+            80s Now!</a>
+        </div>
+        {{else}}
+        <div class="col-12 pt-3 pb-3">
+          <a class="btn btn-primary btn-lg btn-block" href="/signup" role="button" id="text-responsive">Get Sweet
+            80s Now!</a>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 
-</style>
- 
- 
- 
- <div class="container" >
-      <h1 style="margin-top:35px;">Take Me Back To The Good Days</h1> 
-      <h2>OH SWEET NOSTALGIA!</h2>
- </div>
+<div class="theme-hero-3">
+  <div class="row">
 
- <div class="img1" style="margin-top:150px; background-color:black;">
-   <img src="https://post.healthline.com/wp-content/uploads/2020/09/4609-cat-732x549-thumbnail.jpg" class="rounded float-start" alt="...">
-   <p style="color: white; padding-bottom:245px; ">Starting with the 90's Box! <br> This box is filled with the best candies from the 90's</p>
+    <div class="col-md-6 col-sm-12">
+      <img id="theme-img" class="rounded img-fluid" alt="..."
+        src="https://post.healthline.com/wp-content/uploads/2020/09/4609-cat-732x549-thumbnail.jpg">
+    </div>
 
- </div>
-
- <div class="img2" style="margin-top:2px; background-color:black;" >
-  <img src="https://post.healthline.com/wp-content/uploads/2020/09/4609-cat-732x549-thumbnail.jpg" class="rounded float-end" alt="...">.
-  <p style="color: white;padding-bottom:240px;">Can't forget about the 80's Box </p>
-
- </div>
-
- <div class="img1" style="margin-top:2px; background-color:black;">
-   <img src="https://post.healthline.com/wp-content/uploads/2020/09/4609-cat-732x549-thumbnail.jpg" class="rounded float-start" alt="...">
-   <p style="color: white; padding-bottom:245px;">Helllo 70's Box its been a couple decades!</p>
-
- </div>
+    <div class="col-md-6 col-sm-12 text-center pt-lg-3 pb-lg-3">
+      <div class="d-flex flex-column justify-content-evenly align-items-center mt-3">
+        <h3 id="text-responsive">Sweet 90's box!</h3>
+        <p id="text-responsive">This box is filled with the best candies from the 90's</p>
+        <div class="grid" id="text-responsive">
+          <ul class="list-group list-group-horizontal bg-transparent align-items-center">
+            <div class="list-group-item list-group-item-primary">Baby Bottle Pops</li>
+              <div class="list-group-item flex-fill list-group-item-success">Color Your Mouth Gumballs</li>
+                <div class="list-group-item flex-fill list-group-item-danger">Creme Savers</li>
+                  <div class="list-group-item flex-fill list-group-item-warning">Gummi Hot Dogs</li>
+                    <li class="list-group-item flex-fill list-group-item-info">Nerd Ropes</li>
+          </ul>
+        </div>
+        {{#if loggedIn}}
+        <div class="col-12 pt-3 pb-3">
+          <a class="btn btn-primary btn-lg btn-block" href="/dashboard" role="button" id="text-responsive">Get Sweet
+            90s Now!</a>
+        </div>
+        {{else}}
+        <div class="col-12 pt-3 pb-3">
+          <a class="btn btn-primary btn-lg btn-block" href="/signup" role="button" id="text-responsive">Get Sweet
+            90s Now!</a>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

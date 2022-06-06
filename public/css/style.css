@@ -6,13 +6,27 @@ root {
 }
 
 body {
-    background-color: #1f206c;
+    /* background-color: #1f206c; */
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/website-body-background.png");
+    font-family: 'Kurale', serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+nav   {
+    /* background-attachment: fixed;   */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/header-background.png");
 }
 
 a   {
@@ -32,7 +46,12 @@ li {
 
 
 .hero {
-    background-color: salmon;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/website-hero-background.png");
+    /* background-color: salmon; */
     margin-bottom: 25%;
 }
 
@@ -42,12 +61,12 @@ li {
     border-radius: 8%;
 }
 
-.content-image {
+/* .content-image {
     margin: 10px;
     width: 60%;
     height: 20%;
     border-radius: 8%;
-}
+} */
 
 .theme-image {
     width: 50%;
@@ -56,8 +75,21 @@ li {
 }
 
 .theme-container {
+    /* background-attachment: fixed;   */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/website-theme-container-background.png");
     margin-top: 25%;
     margin-bottom: 10%;
+}
+
+
+.content-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/container-background.png");
 }
 
 
@@ -78,15 +110,22 @@ h6 {
 }
 
 .login-hero {
-    background-color: #e8e8f8;
+    /* background-color: #e8e8f8; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/modal-background-login.png");
     margin-bottom: 10%;
     margin-top: 10%;
     border-radius: 2%;
 }
 
-
 .signup-hero {
-    background-color: yellow;
+    /* background-color: yellow; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/modal-background-signup.png");
     margin-bottom: 10%;
     margin-top: 10%;
     border-radius: 2%;
@@ -114,20 +153,60 @@ h6 {
     border-radius: 8%;
 }
 
-/* .button-no-style {
-    background: none;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    color: #48565f;
-    font-size: 100%;
-    font-weight: bold;
-    transition: color .1s;
-    margin-left: 2px;
+.theme-hero-1,
+.theme-hero-2,
+.theme-hero-3 {
+    margin-bottom: 10%;
+    margin-top: 10%;
+    border-radius: 1%;
+}
+ 
+.theme-title-heading {
+    background-color: rgba(140, 34, 240, 0.559);
+}
+
+.theme-hero-1 {
+    background-color: #f9f641;
+}
+
+.theme-hero-2 {
+    background-color: #38d677;
+}
+
+.theme-hero-3 {
+    background-color: #b24b4b;
+}
+
+#text-responsive {
+    font-size: calc(10% + 1vw + 1vh);
   }
-  
-  .button-no-style:hover {
-    background: none;
-    color: #3486eb;
-  } */
+
+  #theme-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8%;
+  }
+
+  .dashboard-hero {
+    background-color: #f54343d1;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    border-radius: 2%;
+  }
+
+  #sub-btn {
+    background-color: #f543ec;
+  }
+
+  .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(109, 6, 6, 0.373);
+    opacity: 1; 
+  }
+
+  #sign-ex {
+    background-color: rgba(109, 6, 6, 0.217);
+  }
+
+  #sign-ex-edit {
+    background-color: rgba(32, 12, 255, 0.28);
+  }
