@@ -4,6 +4,12 @@ const apiRoutes = require('./api');
 const homeRoutes = require('./home-routes.js');
 const dashboardRoutes = require('./dashboard-routes');
 
+// new routes
+const subscriptionRoutes = require('./subscription-routes');
+const creditCardRoutes = require('./creditCard-routes');
+const thankYou = require('./thankYou-routes');
+
+
 
 // The path to the home-routes.js example: www.example.com/
 router.use('/', homeRoutes);
@@ -13,6 +19,9 @@ router.use('/api', apiRoutes);
 router.use('/dashboard', dashboardRoutes);
 
 
+// new routes
+router.use('/creditcard', creditCardRoutes);
+router.use('/thankyou',thankYou);
 
 
 router.use((req, res) => {
