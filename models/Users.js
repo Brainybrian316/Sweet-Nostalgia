@@ -1,14 +1,14 @@
 // Modules to require
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
-// const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt");
 
 //create our user model
 class Users extends Model {
-  // //  the method that will hash the password
-  // checkPassword(loginPw) {
-  //   return bcrypt.compareSync(loginPw, this.password);
-  // }
+  //  the method that will hash the password
+  checkPassword(loginPw) {
+    return bcrypt.compareSync(loginPw, this.password);
+  }
 }
 
 //define table columns and configuration
@@ -97,23 +97,23 @@ Users.init(
     },
   },
   {
-    // // the purpose of the hooks is to do something before or after the model method is run
-    // hooks: {
-    //   // beforeCreate is a hook that runs before the create method is run
-    //   async beforeCreate(newUserData) {
-    //     //    we are hashing the password
-    //     newUserData.password = await bcrypt.hash(newUserData.password, 10);
-    //     // using the bcrypt module to hash the password and store it in the password column
-    //     return newUserData;
-    //   },
-    //   // beforeUpdate is a hook that runs before the update method is run
-    //   async beforeUpdate(newUserData) {
-    //     // if the password column is being updated we are hashing the password
-    //     newUserData.password = await bcrypt.hash(newUserData.password, 10);
-    //     // using the bcrypt module to hash the password and store it in the password column
-    //     return newUserData;
-    //   },
-    // }, // adding our database connection to our model... this is ES6 shorthand for sequelize: sequelize
+    // the purpose of the hooks is to do something before or after the model method is run
+    hooks: {
+      // beforeCreate is a hook that runs before the create method is run
+      async beforeCreate(newUserData) {
+        //    we are hashing the password
+        newUserData.password = await bcrypt.hash(newUserData.password, 10);
+        // using the bcrypt module to hash the password and store it in the password column
+        return newUserData;
+      },
+      // beforeUpdate is a hook that runs before the update method is run
+      async beforeUpdate(newUserData) {
+        // if the password column is being updated we are hashing the password
+        newUserData.password = await bcrypt.hash(newUserData.password, 10);
+        // using the bcrypt module to hash the password and store it in the password column
+        return newUserData;
+      },
+    }, // adding our database connection to our model... this is ES6 shorthand for sequelize: sequelize
     sequelize,
     // the purpose of timestamp is to automatically add the created_at and updated_at columns to the table
     timestamp: false,

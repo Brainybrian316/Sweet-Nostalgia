@@ -146,13 +146,13 @@ router.delete('/:id', (req, res) => {
       res.status(400).json({ message: 'No user with that email address!' });
       return;
     }
-    // // this variable is to check if the password is correct
-    // const validPassword = dbUserData.checkPassword(req.body.password);
-    // // if the password is incorrect we send an error
-    //   if (!validPassword) {
-    //     res.status(400).json({ message: 'Incorrect password!' });
-    //     return;
-    //   }
+    // this variable is to check if the password is correct
+    const validPassword = dbUserData.checkPassword(req.body.password);
+    // if the password is incorrect we send an error
+      if (!validPassword) {
+        res.status(400).json({ message: 'Incorrect password!' });
+        return;
+      }
         // set up session if the password is correct
         req.session.save(() => {
           req.session.users = dbUserData.id;
