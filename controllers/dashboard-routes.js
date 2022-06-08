@@ -61,14 +61,13 @@ router.get('/edit/:id', withAuth, (req, res) => {
         });
 });
 
-router.get('/password/:id', withAuth, (req, res) => {
+router.get('/editpass/:id', withAuth, (req, res) => {
     // access the candel model to find a single candy
     Users.findOne({
             // find the candy for the user by id
             where: {
                 id: req.session.users
             },
-            attributes: ['id', 'first_name', 'last_name', 'email', 'address', 'city', 'state', 'zipCode'],
             // include the candy model
             include: [{
                 model: CandyBox,

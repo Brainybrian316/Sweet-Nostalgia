@@ -3,17 +3,17 @@ async function editPasswordHandler(event) {
     event.preventDefault();
     
 
-    const password = document.querySelector('#edit-password').value
-    const confirmPassword = document.querySelector('#edit-confirm-password').value;
-
-        // variable for the id of the post using the url 
-          const id = window.location.toString().split('/')
-          [window.location.toString().split('/').length - 1];
+    const password = document.querySelector('#edit-password').value.trim();
+    const confirmPassword = document.querySelector('#edit-confirm-password').value.trim();
 
     if (password !== confirmPassword) {
         alert('Passwords do not match');
         return;
-    } 
+    }
+
+        // variable for the id of the post using the url 
+          const id = window.location.toString().split('/')
+          [window.location.toString().split('/').length - 1];
 
     const response = await fetch(`/api/users/${id}`, {
         method: 'put',

@@ -1,16 +1,17 @@
 
-
+<div class="container">
 <div class="subscription-hero">
+    <div class="container p-2">
     <form class="sign-sub-form">
         <div class="container">
-            <div class="row">
+            <div class="row p-3">
 
                 <div>
                     <h1 class="text-white"> Welcome {{users.first_name}}</h1>
                     <p class="text-white">Which box would you like to subscribe to?</p>
                 </div>
 
-{{!-- <div class="form-check"> --}}
+
     <div class="col-md-4 pt-2 pb-2">
     <input class="btn-check candybox_id" type="radio" name="candybox" id="candybox1" autocomplete="off" value="1" >
     <label class="form-check-label btn btn-outline-info btn-lg btn-block text-dark" for="candybox1">
@@ -27,9 +28,7 @@
             </div>
     </label>
     </div>
-{{!-- </div> --}}
 
-{{!-- <div class="form-check"> --}}
     <div class="col-md-4 pt-2 pb-2">
     <input class="btn-check candybox_id" type="radio" name="candybox" id="candybox2" autocomplete="off" value="2" >
     <label class="form-check-label btn btn-outline-warning btn-lg btn-block text-dark" for="candybox2">
@@ -46,9 +45,7 @@
             </div>
     </label>
     </div>
-{{!-- </div> --}}
 
-{{!-- <div class="form-check"> --}}
     <div class="col-md-4 pt-2 pb-2">
     <input class="btn-check candybox_id" type="radio" name="candybox" id="candybox3" autocomplete="off" value="3">
     <label class="form-check-label btn btn-outline-danger btn-lg btn-block text-dark" for="candybox3">
@@ -65,7 +62,7 @@
             </div>
     </label>
     </div>
-{{!-- </div> --}}
+
 
                 <div class="col-12 p-3">
                     <button class="btn btn-info w-100" id="sub-btn" type="submit">Subscribe</button>
@@ -76,64 +73,8 @@
         </div>
     </form>
 </div>
+</div>
+</div>
 
 <script src="/js/sign-sub.js"></script>
-
-{{!-- ! ================================================= --}}
-
-
-
-
-{{!-- container to hold subscription option --}}
-{{!-- <div class="subscription-hero">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-4 pt-2 pb-2">
-                <button type="button" class="btn btn-outline-info btn-lg btn-block text-dark">
-                    <div class="subscription-card">
-                        <div class="subscription-card-header">
-                            <h3>70s Candy Box</h3>
-                        </div>
-                        <div class="subscription-card-body">
-                            <img src="/images/trending_1.jpg" alt="70s Candy Box" class="subscription-card-image">
-                        </div>
-                        <div class="subscription-card-footer">
-                            <p>$9.99 per month</p>
-                </button>
-            </div>
-
-               <div class="col-md-4 pt-2 pb-2">
-                <button type="button" class="btn btn-outline-warning btn-lg btn-block text-dark">
-                    <div class="subscription-card">
-                        <div class="subscription-card-header">
-                            <h3>80s Candy Box</h3>
-                        </div>
-                        <div class="subscription-card-body">
-                            <img src="/images/trending_1.jpg" alt="70s Candy Box" class="subscription-card-image">
-                        </div>
-                        <div class="subscription-card-footer">
-                            <p>$9.99 per month</p>
-                </button>
-            </div>
-
-               <div class="col-md-4 pt-2 pb-2">
-                <button type="button" class="btn btn-outline-danger btn-lg btn-block text-dark">
-                    <div class="subscription-card">
-                        <div class="subscription-card-header">
-                            <h3>90s Candy Box</h3>
-                        </div>
-                        <div class="subscription-card-body">
-                            <img src="/images/trending_1.jpg" alt="70s Candy Box" class="subscription-card-image">
-                        </div>
-                        <div class="subscription-card-footer">
-                            <p>$9.99 per month</p>
-                </button>
-            </div>
-
-
-        </div>
-    </div>
-</div> --}}
-
 
