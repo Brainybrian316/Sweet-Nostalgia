@@ -201,7 +201,11 @@ h6 {
   }
 
   .dashboard-hero {
-    background-color: #f54343d1;
+    /* background-color: #f54343d1; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/dashboard-contact-modal.png");
     margin-bottom: 10%;
     margin-top: 10%;
     border-radius: 2%;
