@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="dashboard-hero">
+        <div class="container p-2">
+            <h1 class="mb-5">Contact Form</h1>
+            <p class="fs-3 text-white">
+                If you are interested in seeing this project become
+                reality, please fill out the form below with your email and interest.
+                If enough people fill out the form, we will contact you to let you know
+                about the project moving into production.
+            </p>
+
+            <form class="contact-form text-white">
+                <div class="row p-3">
+
+                    <div class="col-md-6">
+                        <label for="Email" class="form-label">Email:</label>
+                        <input type="email" name="Email" class="form-control" id="Email" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-label">Interested in this project?</div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Interested" id="Interested" value="Yes" checked>
+                            <label class="form-check-label" for="Interested">
+                                Yes
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Interested" id="Interested" value="No">
+                            <label class="form-check-label" for="Interested">
+                                No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 ">
+                        <button type="submit" class="btn btn-primary float-end m-4" id="btn-test">Submit</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/js/contact-form.js"></script>

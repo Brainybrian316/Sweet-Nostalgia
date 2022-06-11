@@ -103,5 +103,10 @@ router.get('/subscription', withAuth, (req, res) => {
   });
 })
 
+router.get('/contact-form', (req, res) => {
+  
+  res.render('contact-form')
+})
+
 
 module.exports = router;
