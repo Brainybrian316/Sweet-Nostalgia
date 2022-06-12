@@ -211,6 +211,13 @@ h6 {
     border-radius: 2%;
   }
 
+  .card-body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/dashboard-contact-modal.png");
+  }
+
   #sub-btn {
     background-color: #f543ec;
   }
