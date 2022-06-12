@@ -142,7 +142,11 @@ h6 {
 }
 
 .subscription-hero {
-    background-color: #38d677;
+    /* background-color: #38d677; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/subscription-modal.png");
     margin-bottom: 10%;
     margin-top: 10%;
     border-radius: 2%;
@@ -201,10 +205,21 @@ h6 {
   }
 
   .dashboard-hero {
-    background-color: #f54343d1;
+    /* background-color: #f54343d1; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/dashboard-contact-modal.png");
     margin-bottom: 10%;
     margin-top: 10%;
     border-radius: 2%;
+  }
+
+  .card-body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/card-body-graphic.png");
   }
 
   #sub-btn {
