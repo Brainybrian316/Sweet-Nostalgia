@@ -220,6 +220,8 @@ h6 {
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url("../images/card-body-graphic.png");
+    border-radius: 3%;
+    border: none;
   }
 
   #sub-btn {
